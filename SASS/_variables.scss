@@ -1,0 +1,34 @@
+// Typography
+$font-stack: "Open Sans", Arial, sans-serif;
+
+$light: 300;
+$regular: 400;
+$bold: 600;
+
+$f-12: 1vw;
+$f-14: 1.2vw;
+$f-18: 1.5vw;
+$f-20: 1.75vw;
+$f-24: 2vw;
+$f-36: 3vw;
+$f-48: 4vw;
+$f-60: 5vw;
+
+// Color Palette
+$bg-white: #e3e3e3;
+$grid-grey : #c8c8c8;
+
+
+$bd-black: #3b3b3b;
+$white: #ffffff;
+
+$primary: #4499c8;
+$warning: #d2a55e;
+$danger: #d25e5e;
+
+// Break Points
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+$break-xl: 1400px;
