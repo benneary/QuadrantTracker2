@@ -1,12 +1,13 @@
-.grid {
-  background-color: #c8c8c8; }
-
 .vertical-grid {
-  width: 2%;
+  position: absolute;
+  width: 0.3em;
   height: 100%;
+  background-color: #c8c8c8;
   left: 48%; }
 
 .horizontal-grid {
-  height: 2%;
+  position: absolute;
+  height: 0.3em;
   width: 100%;
+  background-color: #c8c8c8;
   top: 48%; }

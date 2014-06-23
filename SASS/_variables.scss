@@ -17,7 +17,9 @@ $f-60: 5vw;
 // Color Palette
 $bg-white: #e3e3e3;
 $grid-grey : #c8c8c8;
+$nav-grey: #363636;
 
+$teal: #47a7bd;
 
 $bd-black: #3b3b3b;
 $white: #ffffff;
@@ -32,3 +34,5 @@ $break-sm: 768px;
 $break-md: 992px;
 $break-lg: 1200px;
 $break-xl: 1400px;
+
+@import "z-index";

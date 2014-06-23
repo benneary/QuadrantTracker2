@@ -1,0 +1,30 @@
+@import "z-index.scss";
+// .modal {
+  // z-index: index($elements, modals);
+//}
+
+.side-nav {
+	background-color: $nav-grey;
+	color: white;
+	height: 100%;
+	padding: 0;
+	z-index: index($elements, sidenav);
+}
+
+.sb-logo {
+	padding: 1em;
+	color: $white;
+	background-color: $teal;
+	font-weight: 500;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;	
+}
+.sb-li {
+	color: $white;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 3em;
+	i {
+		color: $teal;
+	}
+}

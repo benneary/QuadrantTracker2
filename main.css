@@ -1,20 +1,61 @@
-/* line 1, SASS/_Base-Grid.scss */
-.grid {
-  background-color: #c8c8c8;
-}
-
-/* line 5, SASS/_Base-Grid.scss */
+/* line 3, SASS/_Base-Grid.scss */
 .vertical-grid {
-  width: 2%;
+  position: absolute;
+  width: 0.3em;
   height: 100%;
+  background-color: #c8c8c8;
   left: 48%;
 }
 
 /* line 11, SASS/_Base-Grid.scss */
 .horizontal-grid {
-  height: 2%;
+  position: absolute;
+  height: 0.3em;
   width: 100%;
+  background-color: #c8c8c8;
   top: 48%;
+}
+
+/* line 20, SASS/_Base-Grid.scss */
+.grid {
+  z-index: 2;
+}
+
+/* line 6, SASS/_lg-side-nav.scss */
+.side-nav {
+  background-color: #363636;
+  color: white;
+  height: 100%;
+  padding: 0;
+  z-index: 1;
+}
+
+/* line 14, SASS/_lg-side-nav.scss */
+.sb-logo {
+  padding: 1em;
+  color: white;
+  background-color: #47a7bd;
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* line 22, SASS/_lg-side-nav.scss */
+.sb-li {
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 3em;
+}
+/* line 27, SASS/_lg-side-nav.scss */
+.sb-li i {
+  color: #47a7bd;
+}
+
+/* line 1, SASS/_body.scss */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #e3e3e3;
 }
 
 /* line 1, SASS/_layout-grid.scss */
