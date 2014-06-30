@@ -1,3 +1,6 @@
+
+
+// Sidenav Desktop  Animation
 $( "#side-nav-invisible" ).mouseenter(
 	function(){
 		$("#side-nav")
@@ -15,14 +18,32 @@ $( "#side-nav-invisible-exit" ).mouseleave(
 
 $( "#filter-btn" ).click(function() {
 	$("#filter-modal")
+	.velocity("stop")
 	.velocity("fadeIn", {duration: 800 })
 });
 
 $( "#filter-close-btn" ).click(function() {
 	$("#filter-modal")
+	.velocity("stop")
 	.velocity("fadeOut", {duration: 800 })
 });
 
+// Sidenav Mobile Animation
+$('#filter-btn').bind('tap', function(e) { 
+	console.log("the button has been tapped!")
+	$("#filter-modal")
+	.velocity("stop")
+	.velocity("fadeIn", {duration: 800 })
+ });
+
+$('#filter-close-btn').bind('tap', function(e) { 
+	$("#filter-modal")
+	.velocity("stop")
+	.velocity("fadeOut", {duration: 800 })
+ });
+
+
+// Task Hover Animation
 
 $( ".task" ).hover(
 	function(){
