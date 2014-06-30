@@ -1,5 +1,5 @@
 // Typography
-$font-stack: "Open Sans", Arial, sans-serif;
+$font-stack: Roboto, "Open Sans", Arial, sans-serif;
 
 $light: 300;
 $regular: 400;
@@ -17,9 +17,10 @@ $f-60: 5vw;
 // Color Palette
 $bg-white: #e3e3e3;
 $grid-grey : #c8c8c8;
-$nav-grey: #363636;
+$nav-grey: #333333;
+$nav-span: #b4b4b4;
 
-$teal: #47a7bd;
+$teal: #75BFCF;
 
 $bd-black: #3b3b3b;
 $white: #ffffff;
@@ -27,6 +28,18 @@ $white: #ffffff;
 $primary: #4499c8;
 $warning: #d2a55e;
 $danger: #d25e5e;
+
+
+// Dept Color Keys
+$Color-IS: #f64646;
+
+// Team Member Color Keys
+$Kevin: #508dd7;
+$Juan: #50d75a;
+$JB: #cc9966;
+$JS: #cc6666;
+$Chris: #ffcc33;
+
 
 // Break Points
 $break-xs: 480px;

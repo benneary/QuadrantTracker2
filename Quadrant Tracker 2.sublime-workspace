@@ -1,0 +1,359 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"primary-red"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"break",
+				"break-md"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"1em",
+				"1em"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"padin",
+				"padding-bottom"
+			],
+			[
+				"log",
+				"log-light-blue"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"long",
+				"longFromMaps"
+			],
+			[
+				"load",
+				"loadPin"
+			],
+			[
+				"url",
+				"urlforajax"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"MARGIN",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"BACK",
+				"background-color"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"∏",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/benjaminneary/Git/MoodyCampusRadio/SASS/_partials.scss",
+		"/Users/benjaminneary/Git/MoodyCampusRadio/SASS/_variables.scss",
+		"/Users/benjaminneary/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/benjaminneary/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/benjaminneary/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/benjaminneary/Git/QuadrantTracker2/index.html",
+		"/Users/benjaminneary/Git/MoodyCampusRadio/SASS/_vendor.scss",
+		"/Users/benjaminneary/Git/MoodyCampusRadio/SASS/styles.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_lg-side-nav.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_tablet-ui.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_task.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_partials.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_variables.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/main.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_details-modal.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_body.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_Base-Grid.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_vendor.scss",
+		"/Users/benjaminneary/Git/QuadrantTracker2/SASS/_layout-grid.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_partials.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_pivotal-tracker.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_popover.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_Form-Control-BD.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/ViewModel.js",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_variables.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_navbar.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_typography.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_side-nav.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/main.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_prism-coy.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/_vendor.scss",
+		"/Users/benjaminneary/Documents/I S WORK/Style Guide Design/Site/SASS/-layout-grid.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_layout-grid.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_partials.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Desktop/main.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Desktop/_desk-login.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_query-bar.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_selector.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_transactions.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_login.scss",
+		"/Users/benjaminneary/Git/Executive_Summary/login.css",
+		"/Users/benjaminneary/Git/Executive_Summary/styles.css",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_modules.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/_navbar.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/Sass/main.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/main.scss",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/_vendor.scss",
+		"/Users/benjaminneary/Git/Quadrant Matrix/styles.css",
+		"/Users/benjaminneary/Documents/I S WORK/WindowLink/Window_Link Web/vendor.scss",
+		"/Users/benjaminneary/nodetest1/routes/index.js",
+		"/Users/benjaminneary/nodetest1/app.js",
+		"/Users/benjaminneary/nodetest1/views/helloworld.jade",
+		"/Users/benjaminneary/hello.js",
+		"/Users/benjaminneary/MongoTutorial.js",
+		"/Users/benjaminneary/nodetest1/package.json",
+		"/Users/benjaminneary/Git/Executive_Summary/index.html",
+		"/Users/benjaminneary/Git/Executive_Summary/login.html",
+		"/Users/benjaminneary/Downloads/hash_nav/index.html",
+		"/Users/benjaminneary/Git/Executive_Summary/settings.html",
+		"/Users/benjaminneary/Git/Quadrant Matrix/index.html",
+		"/Users/benjaminneary/Git/Executive_Summary/Login-bg.jpg",
+		"/Users/benjaminneary/Git/Df_Admin_UI/dashboard.css",
+		"/Users/benjaminneary/Git/PCM-App/index.html",
+		"/Users/benjaminneary/Git/dragondrop/Ben's Files/index.html",
+		"/Users/benjaminneary/Git/dragondrop/Ben's Files/blog.css",
+		"/Users/benjaminneary/Git/dragondrop/Ben's Files/styles.css",
+		"/Users/benjaminneary/Git/AmChartsDemo/index.html",
+		"/Users/benjaminneary/Git/AmChartsDemo/test.html",
+		"/Users/benjaminneary/Git/AmChartsDemo/scripts.js",
+		"/Users/benjaminneary/Git/us-map/example/color.jquery.js",
+		"/Users/benjaminneary/Git/dragondrop/Ben's Files/blog.html",
+		"/Users/benjaminneary/Documents/I S WORK/Donorflow Admin, Copy:Share/index.html",
+		"/Users/benjaminneary/Library/Application Support/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/Users/benjaminneary/Library/Application Support/Sublime Text 3/Packages/User/View In Browser.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"%;",
+			"1",
+			"2",
+			";\n",
+			"\">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Quadrant Tracker 2.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

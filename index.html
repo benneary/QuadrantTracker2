@@ -6,44 +6,222 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="main.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="Scripts/jquery.velocity.min.js"></script>
+  <script src="Scripts/velocity.ui.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> -->
+
 </head>
 <body>
 
+  <div class="col-12 hidden-lg hidden-md hidden-sm xs-nav">
+    <div class="menu-btn float"><i class="fa fa-align-justify"></i></div>
+    <div class="text-center sb-logo">QUADRANTS</div>
+  </div>
+  <!--Large Side Nav -->
+  <div id="side-nav-invisible" class="col-lg-2 col-md-3 hidden-sm hidden-xs" style="opacity: 1; position: absolute; z-index: 100; height: 100%;"></div>
 
-<!--Large Side Nav -->
-  <div class="side-nav col-lg-2 col-md-3 hidden-sm hidden-xs">
+  <div id="side-nav" class="side-nav col-lg-2 col-md-3 hidden-sm hidden-xs">
     <div class="sb-logo">QUADRANTS</div>
-    <div class="sb-li"><i class="fa fa-pencil-square-o"></i>Create Item</div>
-    <div class="sb-li"><i class="fa fa-sort-amount-desc"></i>Filter By</div>
-    <div class="sb-li-in">
-    <span>Department</span><br>
-    <span>Percentage Complete</span><br>
-    <span>Team Lead</span>
-    </div>
-    <div class="sb-li"><i class="fa fa-archive"></i>Archive</div>
-    <div class="sb-li"><i class="fa fa-trash-o"></i>Delete</div>
+    <div class="sb-active sb-li"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;Create Item</div>
+    <div class="sb-li" style="line-height: 2em; margin-top: 1em;"><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Filter By</div>
+    <div class="sb-li"><i class="fa fa-archive"></i>&nbsp;&nbsp;Archive</div>
+    <div class="sb-li"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;Delete</div>
   </div>
 
+
+  <div id="side-nav-mobile" class="side-nav hidden-lg hidden-md col-sm-3 col-xs-3">
+    <div class="sb-logo hidden-xs">QUADRANTS</div>
+    <div class="sb-active sb-li"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;Create Item</div>
+    <div class="sb-li" style="line-height: 2em; margin-top: 1em;"><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Filter By</div>
+    <div class="sb-li"><i class="fa fa-archive"></i>&nbsp;&nbsp;Archive</div>
+    <div class="sb-li"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;Delete</div>
+  </div>
+
+
+<div class="grid hidden-sm hidden-xs">
+  <div class="vertical-grid"></div>
+  <div class="horizontal-grid"></div>
+</div>
 
 
 <div class="hover"></div>
 
-
-<div class="quad-1">
-  <div class="task"> </div>
+<div class="col-sm-9 col-xs-9 hidden-lg hidden-md tablet-sorter">
+  <div class="float col-3 sort-margin">1</div>
+  <div class="float col-3 sort-margin sort-active">2</div>
+  <div class="float col-3 sort-margin">3</div>
+  <div class="float col-3 sort-margin">4</div>
 </div>
+<div class="quadrant">
+  <div class="column-1 float columns" style="col-6">
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">95%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">92%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">20%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">91%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">95%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">92%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">20%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">91%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">95%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">92%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">20%</div> 
+    </div>
+    <div class="task float">
+      <div class="dept-c-bar float"></div>
+      <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+      <div class="name-icons">
+        <div class="tl-icon jb float">JB</div>
+        <div class="tl-icon js float">JS</div> 
+      </div>
+      <div class="perc-complete float">91%</div> 
+    </div>
 
 
-<!-- Overlay Grid -->
-<div class="grid">
-  <div class="vertical-grid"></div>
-  <div class="horizontal-grid"></div>
+
+
 </div>
-  </div> <!-- End of Body -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</div> <!-- End Quadrant 1 -->
+
+
+<div class="details-modal" hidden>
+ <div class="details-row1"> 
+  <div class="modal-header-1">DF DATA SERVICES</div>
+  <div class="pull-right"><i style="font-size: 1.5em;" class="fa fa-pencil-square-o"></i></div> 
+</div>
+<div>
+
+  <div class="float details-txt">
+    <div class="percentage-bar-container float">
+      <div class="percentage-bar float">
+        <div class="percentage-bar-color float"></div>
+      </div> <div class="percentage-num float"><strong>80%</strong></div>
+    </div>
+    <div class="modal-body-tx-initials"> KD JL JR CK</div>
+
+    <div style="margin-top: 1.5em;"><strong>Department:&nbsp;</strong><span class="modal-body-tx-dept IS">IS</span><br/></div>
+
+    <div style="margin-top: 1.5em;"><strong>Current Phase:&nbsp;</strong><span class="modal-body-tx-phase-planning">Planning</span><br/></div>
+
+    <div style="margin-top: 1.5em;"><strong>Current Status:&nbsp;</strong>
+      <span class="modal-body-tx-status-active">Active</span><br/></div>
+
+      <div style="margin-top: 1.5em;"><strong>Description:
+        &nbsp;</strong><br><span class="modal-body-tx">
+        A rewrite of the DonorFlow Data Services. Seperating the exising service in to several API’s and modules to increase performance and lifespan.
+      </span><br/></div>
+
+      <div style="margin-top: 1.5em;"><strong>Latest Activity:&nbsp;</strong>
+        <br><span class="modal-body-tx">
+        Chuck wrote some magic monkey code that did stuff.
+      </span><br/></div>
+
+      <div style="margin-top: 1.5em;"><strong>Next Step:&nbsp;</strong><br>
+        <span class="modal-body-tx">
+          Publish to Production
+        </span><br/></div>
+
+
+        <button class="btn btn-default pull-right">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Overlay Grid -->
+
+ <!-- End of Body -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="Scripts/quadrants.js"></script>
 </body>
 </html>

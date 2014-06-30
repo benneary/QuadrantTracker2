@@ -1,0 +1,72 @@
+@import "z-index.scss";
+
+.details-modal {
+	background-color: $nav-grey;
+	padding: 2em;
+	color: $white;
+	font-size: 0.85em;
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	z-index: index($elements, details-modal);
+	width: 35%;
+@media screen and (max-width: $break-md) and (min-width: 0px){
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 100%;
+		}
+}
+.details-txt {
+	@media screen and (max-width: $break-md) and (min-width: 0px){
+		width: 80%;
+		}
+}
+
+.modal-header-1 {
+	font-size: 1.3em;
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	float: left;
+
+}
+.percentage-bar-container {
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+	width: 100%;
+}
+.percentage-bar {
+	background-color: $white;
+	width: 70%;
+	height: 1em;
+	border-radius: 1em;
+	margin-top: 1em;
+	margin-bottom: 0.4em;
+}
+.percentage-bar-color {
+	background-color: $teal;
+	width: 50%;
+	height: 1em;
+	border-radius: 1em;
+}
+.percentage-num {
+	margin-left: 1em;
+	margin-top: 0.7em;
+}
+br {
+	line-height: 150%;
+}
+.modal-body-tx-phase-planning {
+	color: #d4b848;
+}
+.modal-body-tx-status-active {
+	color: #70fea5;
+}
+.modal-body-tx-initials {
+	color: #bfbfbf;
+}
+
+strong {
+	font-weight: 600;
+	letter-spacing: 0.04em;
+}

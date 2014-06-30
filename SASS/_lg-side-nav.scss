@@ -9,6 +9,15 @@
 	height: 100%;
 	padding: 0;
 	z-index: index($elements, sidenav);
+	position: absolute;
+	display: none;
+		@media screen and (max-width: $break-md) and (min-width: $break-xs){
+			display: inline-block;
+			position: inherit;
+		}
+		@media screen and (max-width: $break-xs) and (min-width: 0px){
+			position: absolute;
+	}	
 }
 
 .sb-logo {
@@ -17,14 +26,58 @@
 	background-color: $teal;
 	font-weight: 500;
 	font-size: 1.5em;
-	letter-spacing: 0.1em;	
+	letter-spacing: 0.1em;
+	@media screen and (max-width: $break-lg) and (min-width: $break-sm){
+		font-size: 1.3em;
+		padding: 0.5em 1em 0.5em 1em;
+		text-align: left;
+		letter-spacing: 0.25em;
+	}	
+	@media screen and (max-width: $break-sm) and (min-width: $break-xs){
+		font-size: 1em;
+		text-align: center;
+		letter-spacing: 0.25em;
+		padding: 0.5em;
+	}
+	@media screen and (max-width: $break-xs) and (min-width: 0px){
+		font-size: 1em;
+		text-align: center;
+		letter-spacing: 0.25em;
+		padding: 0;
+			}
 }
+
+.sb-active {
+	background-color: $teal;
+	color: $white;
+	i {
+		color: $white !important;
+	}
+}
+
 .sb-li {
 	color: $white;
-	font-size: 1em;
-	font-weight: 300;
+	font-size: 1.1em;
+	font-weight: 200;
 	line-height: 3em;
+	padding-left: 1em;
+	margin-top: 2em;
+
 	i {
 		color: $teal;
 	}
+
+}
+.sb-li :hover {
+		color: $white!important;
+		background-color: $teal;
+}
+
+.sb-li-in {
+	color: $nav-span;
+	font-size: 0.85em;
+	font-weight: 200;
+	line-height: 1.7em;
+	padding-left: 4em;
+
 }

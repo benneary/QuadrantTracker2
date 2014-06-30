@@ -1,0 +1,47 @@
+.tablet-sorter {
+	background-color: $white;
+	font-size: 1.3em;
+	@media screen and (max-width: $break-md) and (min-width: $break-sm){
+		font-size: 0.9em;
+	}
+	@media screen and (max-width: $break-sm) and (min-width: $break-xs){
+		font-size: 0.85em;
+	}
+	@media screen and (max-width: $break-xs) and (min-width: 0px){
+		font-size: 0.9em;
+		width: 100%;
+	}
+	text-align: center;
+	color: $bd-black;
+}
+
+.sort-margin {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	@media screen and (max-width: $break-xs) and (min-width: 0px){
+		padding-top: 0.4em;
+		padding-bottom: 0.4em;
+	}
+}
+.sort-active {
+	background-color: $teal;
+	color: white;
+}
+
+.xs-nav {
+	background-color: $teal;
+	color: $white;
+	padding: 0em;
+	height: 5%;
+	font-size: 1em;
+
+}
+
+.menu-btn {
+	font-size: 1.3em;
+	margin-top: 0.4em;
+	padding-left: 0.7em;
+	@media screen and (max-width: $break-xs) and (min-width: 0px){
+		font-size: 1em;
+	}
+}
