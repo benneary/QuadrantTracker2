@@ -13,21 +13,17 @@
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
   <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> -->
-
 </head>
 <body>
-
   <div class="col-12 hidden-lg hidden-md hidden-sm xs-nav">
     <div class="menu-btn float"><i class="fa fa-align-justify"></i></div>
     <div class="text-center sb-logo">QUADRANTS</div>
   </div>
   <!--Large Side Nav -->
-  <div id="side-nav-invisible" class="col-lg-2 col-md-3 hidden-sm hidden-xs" style="opacity: 1; position: absolute; z-index: 100; height: 100%;"></div>
-
   <div id="side-nav" class="side-nav col-lg-2 col-md-3 hidden-sm hidden-xs">
     <div class="sb-logo">QUADRANTS</div>
     <div class="sb-active sb-li"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;Create Item</div>
-    <div class="sb-li" style="line-height: 2em; margin-top: 1em;"><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Filter By</div>
+    <div class="sb-li" id="filter-btn" style="line-height: 2em; margin-top: 1em;"><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Filter By</div>
     <div class="sb-li"><i class="fa fa-archive"></i>&nbsp;&nbsp;Archive</div>
     <div class="sb-li"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;Delete</div>
   </div>
@@ -36,142 +32,182 @@
   <div id="side-nav-mobile" class="side-nav hidden-lg hidden-md col-sm-3 col-xs-3">
     <div class="sb-logo hidden-xs">QUADRANTS</div>
     <div class="sb-active sb-li"><i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;Create Item</div>
-    <div class="sb-li" style="line-height: 2em; margin-top: 1em;"><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Filter By</div>
+    <div class="sb-li" id="filter-btn" style="line-height: 2em; margin-top: 1em;"><i class="fa fa-sort-amount-desc"></i>&nbsp;&nbsp;Filter By</div>
     <div class="sb-li"><i class="fa fa-archive"></i>&nbsp;&nbsp;Archive</div>
     <div class="sb-li"><i class="fa fa-trash-o"></i>&nbsp;&nbsp;Delete</div>
   </div>
 
+   <div id="side-nav-invisible" class="hidden-sm hidden-xs" style=""></div>
+   <div id="side-nav-invisible-exit" class="col-lg-2 col-md-3 hidden-sm hidden-xs" style=""></div>
 
-<div class="grid hidden-sm hidden-xs">
-  <div class="vertical-grid"></div>
-  <div class="horizontal-grid"></div>
+  <div class="grid hidden-sm hidden-xs">
+    <div class="vertical-grid"></div>
+    <div class="horizontal-grid"></div>
+  </div>
+
+
+  <div class="hover"></div>
+
+  <div class="col-sm-9 col-xs-9 hidden-lg hidden-md tablet-sorter">
+    <div class="float col-3 sort-margin">1</div>
+    <div class="float col-3 sort-margin sort-active">2</div>
+    <div class="float col-3 sort-margin">3</div>
+    <div class="float col-3 sort-margin">4</div>
+  </div>
+  <div class="quadrant">
+    <div class="column-1 float columns" style="col-6">
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">95%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">92%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">20%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">91%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">95%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">92%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">20%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">91%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">95%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">92%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">20%</div> 
+      </div>
+      <div class="task float">
+        <div class="dept-c-bar float"></div>
+        <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
+        <div class="name-icons">
+          <div class="tl-icon jb float">JB</div>
+          <div class="tl-icon js float">JS</div> 
+        </div>
+        <div class="perc-complete float">91%</div> 
+      </div>
+
+
+
+
+    </div>
+  </div> <!-- End Quadrant 1 -->
+
+  <div class="filter-modal" id="filter-modal" hidden>
+  <div class="float filter-body">
+  <div class="col-12 filter-select">
+    <div class="float" style="font-size: 1.5em; padding-right: 1em; padding-top: 0.3em; font-weight: 100;">Filter By:</div>
+    <div class="float"><select class="form-control">
+  <option>Department</option>
+  <option>Quadrant</option>
+  <option>Current Stage</option>
+  <option>Team Leader</option>
+</select></div>
+  </div>
+  <div class="col-12 float" style="margin-top: 1em;">
+    <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+   Donor Research Managment
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Information Technology Services
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+    Moody Radio
+  </label>
+</div>
+  </div>
+    <button class="btn btn-default pull-right" id="filter-close-btn">Close</button>
+    <button class="btn btn-default pull-right" style="margin-right:1em;">Save</button>
+  </div>
 </div>
 
 
-<div class="hover"></div>
-
-<div class="col-sm-9 col-xs-9 hidden-lg hidden-md tablet-sorter">
-  <div class="float col-3 sort-margin">1</div>
-  <div class="float col-3 sort-margin sort-active">2</div>
-  <div class="float col-3 sort-margin">3</div>
-  <div class="float col-3 sort-margin">4</div>
-</div>
-<div class="quadrant">
-  <div class="column-1 float columns" style="col-6">
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">95%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">92%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">20%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">91%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">95%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">92%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">20%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">91%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">DF DATA SERVICES REWRITE &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">95%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">GIFTS INTO CR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">92%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">GOAS &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">20%</div> 
-    </div>
-    <div class="task float">
-      <div class="dept-c-bar float"></div>
-      <div class="task-title float">EL PAR PAR &nbsp; <i class="fa fa-chevron-right"></i>3 </div>
-      <div class="name-icons">
-        <div class="tl-icon jb float">JB</div>
-        <div class="tl-icon js float">JS</div> 
-      </div>
-      <div class="perc-complete float">91%</div> 
-    </div>
-
-
-
-
-</div>
-</div> <!-- End Quadrant 1 -->
 
 
 <div class="details-modal" hidden>
@@ -220,8 +256,8 @@
 
   <!-- Overlay Grid -->
 
- <!-- End of Body -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="Scripts/quadrants.js"></script>
+  <!-- End of Body -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="Scripts/quadrants.js"></script>
 </body>
 </html>

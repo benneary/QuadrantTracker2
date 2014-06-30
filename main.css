@@ -1,4 +1,4 @@
-/* line 3, SASS/_Base-Grid.scss */
+/* line 1, SASS/_Base-Grid.scss */
 .vertical-grid {
   position: absolute;
   width: 0.3em;
@@ -7,7 +7,7 @@
   left: 48%;
 }
 
-/* line 11, SASS/_Base-Grid.scss */
+/* line 8, SASS/_Base-Grid.scss */
 .horizontal-grid {
   position: absolute;
   height: 0.3em;
@@ -16,7 +16,7 @@
   top: 48%;
 }
 
-/* line 20, SASS/_Base-Grid.scss */
+/* line 17, SASS/_Base-Grid.scss */
 .grid {
   z-index: 2;
 }
@@ -331,7 +331,7 @@
   color: white;
   height: 100%;
   padding: 0;
-  z-index: 1;
+  z-index: 11;
   position: absolute;
   display: none;
 }
@@ -350,6 +350,23 @@
 }
 
 /* line 23, SASS/_lg-side-nav.scss */
+#side-nav-invisible-exit {
+  opacity: 1;
+  position: absolute;
+  z-index: 7;
+  height: 100%;
+}
+
+/* line 30, SASS/_lg-side-nav.scss */
+#side-nav-invisible {
+  opacity: 1;
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  width: 4%;
+}
+
+/* line 38, SASS/_lg-side-nav.scss */
 .sb-logo {
   padding: 1em;
   color: white;
@@ -359,7 +376,7 @@
   letter-spacing: 0.1em;
 }
 @media screen and (max-width: 1200px) and (min-width: 768px) {
-  /* line 23, SASS/_lg-side-nav.scss */
+  /* line 38, SASS/_lg-side-nav.scss */
   .sb-logo {
     font-size: 1.3em;
     padding: 0.5em 1em 0.5em 1em;
@@ -368,7 +385,7 @@
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  /* line 23, SASS/_lg-side-nav.scss */
+  /* line 38, SASS/_lg-side-nav.scss */
   .sb-logo {
     font-size: 1em;
     text-align: center;
@@ -377,7 +394,7 @@
   }
 }
 @media screen and (max-width: 480px) and (min-width: 0px) {
-  /* line 23, SASS/_lg-side-nav.scss */
+  /* line 38, SASS/_lg-side-nav.scss */
   .sb-logo {
     font-size: 1em;
     text-align: center;
@@ -386,17 +403,17 @@
   }
 }
 
-/* line 50, SASS/_lg-side-nav.scss */
+/* line 65, SASS/_lg-side-nav.scss */
 .sb-active {
   background-color: #75bfcf;
   color: white;
 }
-/* line 53, SASS/_lg-side-nav.scss */
+/* line 68, SASS/_lg-side-nav.scss */
 .sb-active i {
   color: white !important;
 }
 
-/* line 58, SASS/_lg-side-nav.scss */
+/* line 73, SASS/_lg-side-nav.scss */
 .sb-li {
   color: white;
   font-size: 1.1em;
@@ -405,18 +422,18 @@
   padding-left: 1em;
   margin-top: 2em;
 }
-/* line 66, SASS/_lg-side-nav.scss */
+/* line 81, SASS/_lg-side-nav.scss */
 .sb-li i {
   color: #75bfcf;
 }
 
-/* line 71, SASS/_lg-side-nav.scss */
+/* line 86, SASS/_lg-side-nav.scss */
 .sb-li :hover {
-  color: white !important;
+  color: white;
   background-color: #75bfcf;
 }
 
-/* line 76, SASS/_lg-side-nav.scss */
+/* line 91, SASS/_lg-side-nav.scss */
 .sb-li-in {
   color: #b4b4b4;
   font-size: 0.85em;
@@ -590,6 +607,36 @@ strong {
   .menu-btn {
     font-size: 1em;
   }
+}
+
+/* line 3, SASS/_filter-modal.scss */
+.filter-modal {
+  background-color: #333333;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  color: white;
+  font-size: 0.85em;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  z-index: 3;
+  width: 35%;
+}
+@media screen and (max-width: 992px) and (min-width: 0px) {
+  /* line 3, SASS/_filter-modal.scss */
+  .filter-modal {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+/* line 23, SASS/_filter-modal.scss */
+.filter-body {
+  width: 100%;
 }
 
 /* line 1, SASS/_layout-grid.scss */

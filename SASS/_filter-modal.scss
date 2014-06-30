@@ -1,0 +1,25 @@
+@import "z-index.scss";
+
+.filter-modal {
+	background-color: $nav-grey;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	color: $white;
+	font-size: 0.85em;
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	z-index: index($elements, details-modal);
+	width: 35%;
+@media screen and (max-width: $break-md) and (min-width: 0px){
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 100%;
+		}
+}
+.filter-body {
+	width: 100%;
+}
