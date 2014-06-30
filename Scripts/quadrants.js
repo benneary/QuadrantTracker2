@@ -29,6 +29,16 @@ $( "#filter-close-btn" ).click(function() {
 });
 
 // Sidenav Mobile Animation
+$('#myElement').on('tap', function(e) {
+ console.log("the button has been tapped!")
+	$("#filter-modal")
+	.velocity("stop")
+	.velocity("fadeIn", {duration: 800 })
+});
+
+
+
+
 $('#filter-btn').bind('tap', function(e) { 
 	console.log("the button has been tapped!")
 	$("#filter-modal")
