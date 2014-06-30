@@ -576,18 +576,17 @@ strong {
   background-color: #75bfcf;
   color: white;
   padding: 0em;
-  height: 5%;
   font-size: 1em;
 }
 
-/* line 40, SASS/_tablet-ui.scss */
+/* line 39, SASS/_tablet-ui.scss */
 .menu-btn {
   font-size: 1.3em;
   margin-top: 0.4em;
   padding-left: 0.7em;
 }
 @media screen and (max-width: 480px) and (min-width: 0px) {
-  /* line 40, SASS/_tablet-ui.scss */
+  /* line 39, SASS/_tablet-ui.scss */
   .menu-btn {
     font-size: 1em;
   }
