@@ -456,7 +456,7 @@ body {
 @media screen and (max-width: 992px) and (min-width: 0px) {
   /* line 20, SASS/_details-modal.scss */
   .details-txt {
-    width: 80%;
+    width: 100%;
   }
 }
 
